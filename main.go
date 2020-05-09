@@ -9,7 +9,7 @@ import (
 var templates *template.Template
 
 func main() {
-	templates = template.Must(template.ParseGlob("docs/*.html"))
+	templates = template.Must(template.ParseGlob("templates/*.html"))
 
 	router := mux.NewRouter()
 
